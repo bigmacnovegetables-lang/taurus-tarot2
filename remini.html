@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雙子座 ♊ 7月感情運勢・盧恩＋紫微占卜</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --rose: #FAE8EC;
+    --rose-deep: #F2CEDA;
+    --pink: #E8849A;
+    --mint: #A8D4C2;
+    --lavender: #C9B8D9;
+    --gold: #D4A857;
+    --ink: #3D2B35;
+    --white-soft: #FFFBFC;
+    --peach: #F5C4A1;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:
+      radial-gradient(ellipse 700px 400px at 5% 0%, rgba(232,132,154,0.18), transparent 60%),
+      radial-gradient(ellipse 500px 500px at 95% 15%, rgba(168,212,194,0.2), transparent 60%),
+      radial-gradient(ellipse 400px 400px at 50% 100%, rgba(201,184,217,0.15), transparent 60%),
+      var(--rose);
+    color:var(--ink);
+    font-family:'Noto Sans TC', sans-serif;
+    line-height:1.9;
+    overflow-x:hidden;
+  }
+  .container{max-width:780px;margin:0 auto;padding:0 28px;}
+
+  .floaty{position:fixed;border-radius:50%;opacity:0.4;filter:blur(1px);animation:float 9s ease-in-out infinite;z-index:0;pointer-events:none;}
+  @keyframes float{0%,100%{transform:translateY(0) translateX(0)}50%{transform:translateY(-20px) translateX(8px)}}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+  .reveal{animation:fadeUp 0.9s cubic-bezier(.2,.7,.3,1) both;animation-play-state:paused;}
+
+  /* HERO */
+  header.hero{position:relative;text-align:center;padding:90px 24px 70px;overflow:hidden;}
+  .hero-deco{position:absolute;top:-40px;left:50%;transform:translateX(-50%);width:520px;height:520px;opacity:0.12;z-index:0;}
+  .hero-content{position:relative;z-index:1;}
+  .eyebrow{font-size:13.5px;letter-spacing:0.38em;color:var(--pink);font-weight:700;margin-bottom:18px;text-transform:uppercase;}
+  .hero h1{font-family:'Noto Serif TC',serif;font-weight:900;font-size:clamp(38px,7vw,62px);line-height:1.25;color:var(--ink);margin-bottom:10px;}
+  .gemini-symbol{color:var(--pink);font-size:1em;}
+  .hero .sub{font-family:'Noto Serif TC',serif;font-size:clamp(19px,3.5vw,25px);color:var(--ink);opacity:0.8;margin-bottom:28px;}
+  .hero p.lede{max-width:560px;margin:0 auto;font-size:16.5px;color:#6b4a55;}
+  .scroll-hint{margin-top:48px;font-size:13px;letter-spacing:0.22em;color:var(--ink);opacity:0.4;}
+  .scroll-hint svg{display:block;margin:10px auto 0;animation:bob 1.8s ease-in-out infinite;}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+
+  /* SECTION */
+  section{position:relative;padding:56px 0;z-index:1;}
+  .section-title{font-family:'Noto Serif TC',serif;font-weight:700;font-size:clamp(23px,4vw,29px);text-align:center;margin-bottom:12px;}
+  .section-sub{text-align:center;color:#7c5b67;font-size:15px;max-width:500px;margin:0 auto 46px;}
+  .divider{width:60px;height:2px;margin:0 auto 46px;background:linear-gradient(90deg,transparent,var(--pink),transparent);}
+
+  /* RUNE + ZIWEI CARDS */
+  .card-grid{display:flex;flex-direction:column;gap:32px;}
+  .oracle-card{
+    background:var(--white-soft);border-radius:26px;padding:34px 32px;
+    box-shadow:0 14px 40px -20px rgba(61,43,53,0.22);
+    border:1px solid rgba(232,132,154,0.15);
+    transition:transform .3s ease,box-shadow .3s ease;
+  }
+  .oracle-card:hover{transform:translateY(-5px);box-shadow:0 22px 50px -20px rgba(61,43,53,0.28);}
+  .card-top{display:flex;align-items:center;gap:16px;margin-bottom:16px;}
+  .card-glyph{
+    width:58px;height:58px;min-width:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Noto Serif TC',serif;font-size:24px;font-weight:700;color:white;
+  }
+  .card-name-wrap .card-name{font-family:'Noto Serif TC',serif;font-weight:700;font-size:19px;}
+  .card-pos{display:inline-block;margin-top:4px;font-size:12px;padding:3px 11px;border-radius:999px;font-weight:700;letter-spacing:0.05em;}
+  .pos-upright{background:rgba(168,212,194,0.3);color:#3d7a62;}
+  .pos-reverse{background:rgba(232,132,154,0.25);color:#b84060;}
+  .pos-zi{background:rgba(212,168,87,0.25);color:#9a6e1a;}
+  .card-body{color:#5a3d47;font-size:15.5px;}
+
+  .g1 .card-glyph{background:linear-gradient(135deg,#E8849A,#d46a82);}
+  .g2 .card-glyph{background:linear-gradient(135deg,#A8D4C2,#7bbda8);}
+  .g3 .card-glyph{background:linear-gradient(135deg,#C9B8D9,#ab97c9);}
+  .g4 .card-glyph{background:linear-gradient(135deg,#D4A857,#bc8e3a);}
+  .g5 .card-glyph{background:linear-gradient(135deg,#F5C4A1,#e8a07a);font-size:16px;}
+
+  /* SITUATION BLOCKS */
+  .situation-list{display:flex;flex-direction:column;gap:40px;}
+  .situation{
+    background:var(--white-soft);border-radius:28px;
+    padding:38px 34px;
+    box-shadow:0 14px 40px -20px rgba(61,43,53,0.2);
+    border-left:5px solid transparent;
+  }
+  .s1{border-left-color:var(--pink);}
+  .s2{border-left-color:var(--mint);}
+  .s3{border-left-color:var(--gold);}
+  .sit-tag{
+    display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:0.12em;
+    padding:4px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .s1 .sit-tag{background:rgba(232,132,154,0.18);color:#b84060;}
+  .s2 .sit-tag{background:rgba(168,212,194,0.25);color:#3d7a62;}
+  .s3 .sit-tag{background:rgba(212,168,87,0.2);color:#9a6e1a;}
+  .situation h3{font-family:'Noto Serif TC',serif;font-weight:700;font-size:20px;margin-bottom:14px;color:var(--ink);}
+  .situation p{color:#5a3d47;font-size:15.5px;margin-bottom:0;}
+
+  /* WHAT TO DO */
+  .todo-box{
+    background:linear-gradient(135deg,rgba(232,132,154,0.12),rgba(168,212,194,0.12));
+    border-radius:28px;padding:44px 38px;
+    border:1px solid rgba(212,168,87,0.25);
+  }
+  .todo-box .qm{font-family:'Noto Serif TC',serif;font-size:48px;color:var(--pink);opacity:0.5;line-height:0.5;margin-bottom:12px;display:block;}
+  .todo-box p{font-size:17px;color:#5a3d47;max-width:520px;margin:0 auto;text-align:center;}
+
+  /* CTA */
+  .cta-section{padding:80px 0 100px;}
+  .cta-card{
+    background:var(--ink);border-radius:32px;padding:54px 40px;
+    color:var(--rose);text-align:center;position:relative;overflow:hidden;
+  }
+  .cta-card::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(circle at 20% 20%,rgba(232,132,154,0.3),transparent 50%),
+      radial-gradient(circle at 80% 80%,rgba(168,212,194,0.2),transparent 50%);
+  }
+  .cta-inner{position:relative;z-index:1;}
+  .cta-tag{display:inline-block;font-size:13px;letter-spacing:0.3em;color:var(--gold);font-weight:700;margin-bottom:18px;text-transform:uppercase;}
+  .cta-card h2{font-family:'Noto Serif TC',serif;font-weight:700;font-size:clamp(23px,4vw,30px);margin-bottom:16px;color:#FAE8EC;}
+  .cta-card p{color:#e8cdd4;font-size:15.5px;max-width:480px;margin:0 auto 36px;}
+  .cta-divider{width:48px;height:1px;background:var(--gold);margin:36px auto;opacity:0.5;}
+  .cta-options{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:520px;margin:0 auto;}
+  .cta-opt{
+    background:rgba(255,255,255,0.07);border:1px solid rgba(232,132,154,0.35);
+    border-radius:20px;padding:26px 22px;text-align:center;
+  }
+  .cta-opt h3{font-family:'Noto Serif TC',serif;font-size:17px;color:var(--gold);margin-bottom:10px;}
+  .cta-opt p{font-size:13.5px;color:#e8cdd4;margin-bottom:16px;}
+  .line-btn{
+    display:inline-flex;align-items:center;gap:7px;
+    padding:9px 20px;background:var(--pink);color:white;font-weight:700;
+    border-radius:999px;font-size:14px;text-decoration:none;
+    transition:background .2s;
+  }
+  .line-btn:hover{background:#d46a82;}
+
+  footer{text-align:center;padding:40px 24px 60px;font-size:13px;color:#9c7a87;letter-spacing:0.05em;}
+
+  @media(max-width:600px){
+    .hero{padding:70px 20px 50px;}
+    .cta-options{grid-template-columns:1fr;}
+    .situation,.todo-box{padding:28px 22px;}
+    .oracle-card{padding:26px 20px;}
+    .cta-card{padding:40px 22px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="floaty" style="width:14px;height:14px;background:var(--pink);top:10%;left:7%;animation-delay:0s;"></div>
+<div class="floaty" style="width:10px;height:10px;background:var(--mint);top:28%;left:90%;animation-delay:2.5s;"></div>
+<div class="floaty" style="width:16px;height:16px;background:var(--lavender);top:60%;left:4%;animation-delay:4s;"></div>
+<div class="floaty" style="width:11px;height:11px;background:var(--gold);top:78%;left:91%;animation-delay:1.2s;"></div>
+<div class="floaty" style="width:9px;height:9px;background:var(--peach);top:45%;left:93%;animation-delay:3s;"></div>
+
+<header class="hero">
+  <svg class="hero-deco" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="95" fill="none" stroke="#E8849A" stroke-width="1.5"/>
+    <circle cx="100" cy="100" r="75" fill="none" stroke="#A8D4C2" stroke-width="1.2"/>
+    <circle cx="100" cy="100" r="55" fill="none" stroke="#C9B8D9" stroke-width="1"/>
+    <circle cx="100" cy="100" r="35" fill="none" stroke="#D4A857" stroke-width="1"/>
+    <line x1="100" y1="5" x2="100" y2="195" stroke="#E8849A" stroke-width="0.5" opacity="0.4"/>
+    <line x1="5" y1="100" x2="195" y2="100" stroke="#E8849A" stroke-width="0.5" opacity="0.4"/>
+    <line x1="30" y1="30" x2="170" y2="170" stroke="#A8D4C2" stroke-width="0.5" opacity="0.3"/>
+    <line x1="170" y1="30" x2="30" y2="170" stroke="#A8D4C2" stroke-width="0.5" opacity="0.3"/>
+  </svg>
+  <div class="hero-content reveal">
+    <div class="eyebrow">July Rune ✦ Zi Wei Reading</div>
+    <h1><span class="gemini-symbol">♊</span> 雙子座</h1>
+    <div class="sub">2026・7月感情運勢｜盧恩符文 × 紫微斗數</div>
+    <p class="lede">這個月的雙子座，感情裡有一股若有似無的甜——有人在你心裡佔了一個位置，只是你還不確定，這個位置究竟叫做「朋友」還是「更多」。</p>
+    <div class="scroll-hint">
+      往下看看牌說了什麼
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D2B35" stroke-width="1.6"><path d="M12 4v16M5 13l7 7 7-7"/></svg>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- CARDS -->
+  <section id="cards">
+    <h2 class="section-title">這次抽到的牌</h2>
+    <p class="section-sub">盧恩符文與紫微牌卡，分別從不同角度照出你這個月感情的樣子。</p>
+    <div class="divider"></div>
+
+    <div class="card-grid">
+
+      <article class="oracle-card g1 reveal">
+        <div class="card-top">
+          <div class="card-glyph">ᚷ</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Gebo 禮物</div>
+            <span class="card-pos pos-upright">盧恩・正位</span>
+          </div>
+        </div>
+        <div class="card-body">
+          Gebo 代表「給予與接受的平衡」，它的形狀就是一個 X——兩條路交叉在一起，意味著兩個靈魂之間產生了真實的連結。這份連結不是單方面的，而是雙向的吸引。這個月你和某人之間的緣分是真的，不是你想太多。
+        </div>
+      </article>
+
+      <article class="oracle-card g2 reveal">
+        <div class="card-top">
+          <div class="card-glyph">ᚱ</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Raidho 旅程</div>
+            <span class="card-pos pos-upright">盧恩・正位</span>
+          </div>
+        </div>
+        <div class="card-body">
+          Raidho 代表「在對的道路上前行」，但它也提醒你：旅程需要時間，不是一步就到終點。現在這段關係正在移動中，時機在慢慢成熟，但還沒到你能確定答案的那一刻。耐心等一等，節奏對了自然會到位。
+        </div>
+      </article>
+
+      <article class="oracle-card g3 reveal">
+        <div class="card-top">
+          <div class="card-glyph">ᛟ</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Othala 根源</div>
+            <span class="card-pos pos-reverse">盧恩・逆位</span>
+          </div>
+        </div>
+        <div class="card-body">
+          Othala 正位代表穩固的根基與歸屬感，逆位則提醒你：目前這段關係的「定位」還不穩固，雙方心裡都有點沒說清楚的事。這不是壞事，只是還在過渡期——關係正在尋找它新的形狀，只是還沒找到。
+        </div>
+      </article>
+
+      <article class="oracle-card g4 reveal">
+        <div class="card-top">
+          <div class="card-glyph">ᛊ</div>
+          <div class="card-name-wrap">
+            <div class="card-name">Sowilo 太陽</div>
+            <span class="card-pos pos-upright">盧恩・正位</span>
+          </div>
+        </div>
+        <div class="card-body">
+          整個牌陣裡最讓人安心的一張。Sowilo 是勝利、光明與生命力，它出現在這裡，代表這段關係的「最終能量」是正面的。不管現在有多模糊，只要你不急著用焦慮打亂這股能量，結果是往好的方向走的。
+        </div>
+      </article>
+
+      <article class="oracle-card g5 reveal">
+        <div class="card-top">
+          <div class="card-glyph">紫微</div>
+          <div class="card-name-wrap">
+            <div class="card-name">丁火 × 七殺</div>
+            <span class="card-pos pos-zi">紫微斗數牌卡</span>
+          </div>
+        </div>
+        <div class="card-body">
+          丁火是柔中帶熱的火焰，七殺則是行動力強、敢愛敢恨的星曜。這個組合說的是：你對這段感情是有溫度的，但你的行動力可能比情感本身跑得還快，容易衝動表態或過度解讀對方的訊號。七殺提醒你，熱情是好事，但先讓情緒落地再行動。
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SITUATIONS -->
+  <section id="situations">
+    <h2 class="section-title">你的7月</h2>
+    <p class="section-sub">不同的感情狀態，牌給的訊息也不一樣。找到你的位置，看看這個月的提醒。</p>
+    <div class="divider"></div>
+
+    <div class="situation-list">
+
+      <div class="situation s1 reveal">
+        <span class="sit-tag">💫 目前單身</span>
+        <h3>那個讓你心動的人，可能就是你以為的「普通朋友」</h3>
+        <p>Gebo 說的那個「雙向連結」，很可能就發生在你最熟悉的人際圈裡。這個月可能會有一段朋友變情人的能量正在醞釀——某個你已經認識一段時間的人，最近讓你心裡有點不一樣的感覺。Raidho 說時機還沒完全到，先好好感受這份微妙，不急著定義，有時候「說破」反而打亂了節奏。Sowilo 告訴你，這段緣分的能量是好的，放輕鬆，讓它自然流動。</p>
+      </div>
+
+      <div class="situation s2 reveal">
+        <span class="sit-tag">🌿 有交往對象</span>
+        <h3>關係在升溫，但雙方的默契可能還需要重新對齊</h3>
+        <p>Othala 逆位出現在這裡，代表你和伴侶之間有些「沒說清楚的事」正在累積——可能是對未來的期待不一樣，或者日常相處有些習慣開始讓彼此有點悶。但 Gebo 說這份連結是真實的，七殺提醒你別因為一時的焦躁就衝動地說出什麼，丁火的溫柔反而是這段關係最好的黏著劑。這個月適合找一個輕鬆的時機，好好說說心裡話，把模糊的地方說清楚。</p>
+      </div>
+
+      <div class="situation s3 reveal">
+        <span class="sit-tag">✨ 有結婚對象／已婚</span>
+        <h3>感情需要重新找到穩定的根基，而不只是熱度</h3>
+        <p>Othala 逆位在已婚或論及婚嫁的情況下，代表「家的根基」需要重新被重視——可能是兩人的生活重心有些偏移，或者因為忙碌讓親密感慢慢淡了。七殺的能量讓你容易對現況感到不耐，但丁火提醒你：這段關係值得你溫柔對待。Sowilo 的光還在，Raidho 說要繼續走、不能停，這個月試著一起做一件平靜但有意義的事，重新連結彼此的頻率。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHAT TO DO -->
+  <section id="todo">
+    <div class="todo-box reveal">
+      <span class="qm">?</span>
+      <p>不確定這段感情怎麼走？還是心裡有很多問號沒有答案？有時候，牌面能看到的，比你現在以為的還要多一點。</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-card reveal">
+      <div class="cta-inner">
+        <div class="cta-tag">✦ 想更清楚地看見這段緣分</div>
+        <h2>讓我們一起把模糊的感覺說清楚</h2>
+        <p>每段感情都有屬於它的節奏和能量，占卜能幫你看見現在看不清楚的那一塊。不管你是對某人有感覺、還在曖昧、或是想確認現有關係的方向，都歡迎來聊聊。</p>
+
+        <div class="cta-divider"></div>
+
+        <div class="cta-options">
+          <div class="cta-opt">
+            <h3>🔮 盧恩符文占卜</h3>
+            <p>還不確定對方的心意，或感情狀況讓你看不清楚方向？來抽一組符文，把現在的能量說給你聽。</p>
+            <a class="line-btn" href="https://line.me/ti/p/~423hhxdn" target="_blank" rel="noopener">LINE 預約</a>
+          </div>
+          <div class="cta-opt">
+            <h3>⭐ 紫微斗數合盤</h3>
+            <p>已經在曖昧或有交往對象了？合盤能看見兩個人的緣分深度、相處模式與未來走向。</p>
+            <a class="line-btn" href="https://line.me/ti/p/~423hhxdn" target="_blank" rel="noopener">LINE 預約</a>
+          </div>
+        </div>
+
+        <div class="cta-divider"></div>
+        <p style="font-size:14px;color:#c9a0ac;">📣 7月也有集體體驗冥想活動，請隨時關注最新消息，名額有限，歡迎提早詢問。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  ♊ Gemini Love Reading · Rune × Zi Wei · 2026 July
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting) entry.target.style.animationPlayState='running';
+    });
+  },{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
